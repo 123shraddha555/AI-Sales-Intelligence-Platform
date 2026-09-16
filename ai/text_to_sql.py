@@ -74,7 +74,7 @@ print("\nSQL query is safe to execute.")
 connection = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="Shraddha2410",
+    password=os.getenv("MYSQL_PASSWORD"),
     database="sales_intelligence"
 )
 
